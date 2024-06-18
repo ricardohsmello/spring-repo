@@ -15,7 +15,7 @@ curl --location 'http://localhost:8080/question?message=Who_Won_The_World_Cup_20
 You can use the following `curl` command to make a request to the API:
 
 ```sh
-curl --location 'http://localhost:8080/embedding?message=I%20want%20a%20movie%20with%20world%20cup'
+curl --location 'http://localhost:8080/embedding?message=I_Want_A_Movie_With_World_Cup!!'
 
 {
     "embedding": [

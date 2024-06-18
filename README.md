@@ -10,7 +10,7 @@ curl --location 'http://localhost:8080/question?message=Who%20won%20the%20world%
 {
     "completion": "The 2002 FIFA World Cup was won by Brazil."
 }
-
+```
 ## Example Embedded Client API Request
 You can use the following `curl` command to make a request to the API:
 

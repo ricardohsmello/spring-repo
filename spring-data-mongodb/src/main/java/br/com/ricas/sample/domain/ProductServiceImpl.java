@@ -5,6 +5,8 @@ import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import org.springframework.data.mongodb.core.query.Criteria;
 
+import java.util.ArrayList;
+
 public class ProductServiceImpl {
 
 
@@ -15,6 +17,17 @@ public class ProductServiceImpl {
     }
 
     public Product getProduct(String id) {
+
+
+        mongoTemplate.getCollection("")
+                .dropIndexes();
+
+        mongoTemplate.getCollection("")
+                        .dropIndexes();
+
+        mongoTemplate.getCollection("")
+                .createIndexes(new ArrayList<>())
+
         AggregationResults<Product> aggregate = mongoTemplate.aggregate(Aggregation.newAggregation(
                 Aggregation.match(new Criteria().and("id").is(id))
         ), "products", Product.class);
